@@ -1,0 +1,8 @@
+Matching Defaults entries for flowjav on parrot:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin,
+    use_pty
+
+User flowjav may run the following commands on parrot:
+    (ALL : ALL) ALL
+    (ALL) ALL

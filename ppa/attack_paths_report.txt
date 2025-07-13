@@ -1,0 +1,4 @@
+RISK [20/40]: user:flowjav → process:/usr/libexec/dconf-service
+RISK [20/40]: user:flowjav → process:/usr/libexec/xdg-desktop-portal
+RISK [20/40]: user:flowjav → process:/usr/libexec/xdg-document-portal
+RISK [20/40]: user:flowjav → process:/usr/libexec/xdg-desktop-portal-gtk

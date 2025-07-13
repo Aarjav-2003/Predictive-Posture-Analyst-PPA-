@@ -1,0 +1,1946 @@
+{
+    "network_interfaces": [
+        {
+            "name": "lo",
+            "details": [
+                "link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00",
+                "inet 127.0.0.1/8 scope host lo",
+                "valid_lft forever preferred_lft forever",
+                "inet6 ::1/128 scope host noprefixroute",
+                "valid_lft forever preferred_lft forever"
+            ]
+        },
+        {
+            "name": "ens33",
+            "details": [
+                "link/ether 00:0c:29:6b:82:2d brd ff:ff:ff:ff:ff:ff",
+                "altname enp2s1",
+                "inet 192.168.203.131/24 brd 192.168.203.255 scope global dynamic noprefixroute ens33",
+                "valid_lft 1328sec preferred_lft 1328sec",
+                "inet6 fe80::8ab:1cf:f3b8:7e39/64 scope link noprefixroute",
+                "valid_lft forever preferred_lft forever"
+            ]
+        },
+        {
+            "name": "docker0",
+            "details": [
+                "link/ether 02:42:3b:b8:88:25 brd ff:ff:ff:ff:ff:ff",
+                "inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0",
+                "valid_lft forever preferred_lft forever"
+            ]
+        }
+    ],
+    "open_ports": [
+        "tcp   LISTEN 0      4096                         127.0.0.1:34875      0.0.0.0:*",
+        "tcp   LISTEN 0      50                                   *:8080             *:*"
+    ],
+    "users": [
+        {
+            "username": "root",
+            "uid": "0",
+            "home": "/root",
+            "shell": "/bin/bash"
+        },
+        {
+            "username": "daemon",
+            "uid": "1",
+            "home": "/usr/sbin",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "bin",
+            "uid": "2",
+            "home": "/bin",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "sys",
+            "uid": "3",
+            "home": "/dev",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "sync",
+            "uid": "4",
+            "home": "/bin",
+            "shell": "/bin/sync"
+        },
+        {
+            "username": "games",
+            "uid": "5",
+            "home": "/usr/games",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "man",
+            "uid": "6",
+            "home": "/var/cache/man",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "lp",
+            "uid": "7",
+            "home": "/var/spool/lpd",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "mail",
+            "uid": "8",
+            "home": "/var/mail",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "news",
+            "uid": "9",
+            "home": "/var/spool/news",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "uucp",
+            "uid": "10",
+            "home": "/var/spool/uucp",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "proxy",
+            "uid": "13",
+            "home": "/bin",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "www-data",
+            "uid": "33",
+            "home": "/var/www",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "backup",
+            "uid": "34",
+            "home": "/var/backups",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "list",
+            "uid": "38",
+            "home": "/var/list",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "irc",
+            "uid": "39",
+            "home": "/run/ircd",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "_apt",
+            "uid": "42",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "nobody",
+            "uid": "65534",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "systemd-network",
+            "uid": "998",
+            "home": "/",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "tss",
+            "uid": "100",
+            "home": "/var/lib/tpm",
+            "shell": "/bin/false"
+        },
+        {
+            "username": "strongswan",
+            "uid": "101",
+            "home": "/var/lib/strongswan",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "systemd-timesync",
+            "uid": "997",
+            "home": "/",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "Debian-exim",
+            "uid": "102",
+            "home": "/var/spool/exim4",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "uuidd",
+            "uid": "103",
+            "home": "/run/uuidd",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "debian-tor",
+            "uid": "104",
+            "home": "/var/lib/tor",
+            "shell": "/bin/false"
+        },
+        {
+            "username": "messagebus",
+            "uid": "105",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "usbmux",
+            "uid": "106",
+            "home": "/var/lib/usbmux",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "dnsmasq",
+            "uid": "107",
+            "home": "/var/lib/misc",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "avahi",
+            "uid": "108",
+            "home": "/run/avahi-daemon",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "pulse",
+            "uid": "109",
+            "home": "/run/pulse",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "saned",
+            "uid": "110",
+            "home": "/var/lib/saned",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "lightdm",
+            "uid": "111",
+            "home": "/var/lib/lightdm",
+            "shell": "/bin/false"
+        },
+        {
+            "username": "geoclue",
+            "uid": "112",
+            "home": "/var/lib/geoclue",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "polkitd",
+            "uid": "996",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "rtkit",
+            "uid": "113",
+            "home": "/proc",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "colord",
+            "uid": "114",
+            "home": "/var/lib/colord",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "nm-openvpn",
+            "uid": "115",
+            "home": "/var/lib/openvpn/chroot",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "nm-openconnect",
+            "uid": "116",
+            "home": "/var/lib/NetworkManager",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "mysql",
+            "uid": "117",
+            "home": "/nonexistent",
+            "shell": "/bin/false"
+        },
+        {
+            "username": "tcpdump",
+            "uid": "118",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "stunnel4",
+            "uid": "995",
+            "home": "/var/run/stunnel4",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "sshd",
+            "uid": "119",
+            "home": "/run/sshd",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "sslh",
+            "uid": "120",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "arpwatch",
+            "uid": "121",
+            "home": "/var/lib/arpwatch",
+            "shell": "/bin/sh"
+        },
+        {
+            "username": "ntpsec",
+            "uid": "122",
+            "home": "/nonexistent",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "miredo-server",
+            "uid": "123",
+            "home": "/var/run/miredo-server",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "iodine",
+            "uid": "124",
+            "home": "/run/iodine",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "miredo",
+            "uid": "125",
+            "home": "/var/run/miredo",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "postgres",
+            "uid": "126",
+            "home": "/var/lib/postgresql",
+            "shell": "/bin/bash"
+        },
+        {
+            "username": "inetsim",
+            "uid": "127",
+            "home": "/var/lib/inetsim",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "beef-xss",
+            "uid": "128",
+            "home": "/var/lib/beef-xss",
+            "shell": "/usr/sbin/nologin"
+        },
+        {
+            "username": "flowjav",
+            "uid": "1000",
+            "home": "/home/flowjav",
+            "shell": "/bin/bash"
+        },
+        {
+            "username": "jenkins",
+            "uid": "129",
+            "home": "/var/lib/jenkins",
+            "shell": "/bin/bash"
+        }
+    ],
+    "groups": {
+        "root": [],
+        "daemon": [],
+        "bin": [],
+        "sys": [],
+        "adm": [],
+        "tty": [],
+        "disk": [],
+        "lp": [],
+        "mail": [],
+        "news": [],
+        "uucp": [],
+        "man": [],
+        "proxy": [],
+        "kmem": [],
+        "dialout": [],
+        "fax": [],
+        "voice": [],
+        "cdrom": [
+            "flowjav"
+        ],
+        "floppy": [
+            "flowjav"
+        ],
+        "tape": [],
+        "sudo": [
+            "flowjav"
+        ],
+        "audio": [
+            "pulse",
+            "flowjav"
+        ],
+        "dip": [
+            "flowjav"
+        ],
+        "www-data": [],
+        "backup": [],
+        "operator": [],
+        "list": [],
+        "irc": [],
+        "src": [],
+        "shadow": [],
+        "utmp": [],
+        "video": [
+            "flowjav"
+        ],
+        "sasl": [],
+        "plugdev": [
+            "flowjav"
+        ],
+        "staff": [],
+        "games": [],
+        "users": [],
+        "nogroup": [],
+        "systemd-journal": [],
+        "systemd-network": [],
+        "crontab": [],
+        "input": [],
+        "sgx": [],
+        "kvm": [],
+        "render": [],
+        "netdev": [
+            "flowjav"
+        ],
+        "tss": [],
+        "ssl-cert": [
+            "postgres"
+        ],
+        "systemd-timesync": [],
+        "Debian-exim": [],
+        "uuidd": [],
+        "debian-tor": [],
+        "messagebus": [],
+        "_ssh": [],
+        "bluetooth": [
+            "flowjav"
+        ],
+        "vboxsf": [],
+        "avahi": [],
+        "lpadmin": [
+            "flowjav"
+        ],
+        "pulse": [],
+        "pulse-access": [],
+        "scanner": [
+            "saned",
+            "flowjav"
+        ],
+        "saned": [],
+        "lightdm": [],
+        "geoclue": [],
+        "polkitd": [],
+        "rtkit": [],
+        "colord": [],
+        "nm-openvpn": [],
+        "nm-openconnect": [],
+        "mysql": [],
+        "tcpdump": [],
+        "rdma": [],
+        "stunnel4": [
+            "stunnel4"
+        ],
+        "sslh": [],
+        "arpwatch": [],
+        "ntpsec": [],
+        "sambashare": [],
+        "postgres": [],
+        "inetsim": [],
+        "wireshark": [],
+        "beef-xss": [],
+        "docker": [
+            "flowjav"
+        ],
+        "flowjav": [],
+        "jenkins": []
+    },
+    "sudo_privileges": [
+        "Matching Defaults entries for flowjav on parrot:",
+        "    env_reset, mail_badpass,",
+        "    secure_path=/usr/local/sbin\\:/usr/local/bin\\:/usr/sbin\\:/usr/bin\\:/sbin\\:/bin,",
+        "    use_pty",
+        "",
+        "User flowjav may run the following commands on parrot:",
+        "    (ALL : ALL) ALL",
+        "    (ALL) ALL"
+    ],
+    "running_processes": [
+        {
+            "user": "root",
+            "pid": "1",
+            "cpu": "0.8",
+            "mem": "0.1",
+            "command": "/sbin/init splash noautomount splash"
+        },
+        {
+            "user": "root",
+            "pid": "2",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kthreadd]"
+        },
+        {
+            "user": "root",
+            "pid": "3",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[rcu_gp]"
+        },
+        {
+            "user": "root",
+            "pid": "4",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[rcu_par_gp]"
+        },
+        {
+            "user": "root",
+            "pid": "5",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[slub_flushwq]"
+        },
+        {
+            "user": "root",
+            "pid": "6",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[netns]"
+        },
+        {
+            "user": "root",
+            "pid": "9",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/0:1-inet_frag_wq]"
+        },
+        {
+            "user": "root",
+            "pid": "11",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[mm_percpu_wq]"
+        },
+        {
+            "user": "root",
+            "pid": "12",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[rcu_tasks_kthread]"
+        },
+        {
+            "user": "root",
+            "pid": "13",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[rcu_tasks_rude_kthread]"
+        },
+        {
+            "user": "root",
+            "pid": "14",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[rcu_tasks_trace_kthread]"
+        },
+        {
+            "user": "root",
+            "pid": "15",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ksoftirqd/0]"
+        },
+        {
+            "user": "root",
+            "pid": "16",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "[rcu_preempt]"
+        },
+        {
+            "user": "root",
+            "pid": "17",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[migration/0]"
+        },
+        {
+            "user": "root",
+            "pid": "18",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[idle_inject/0]"
+        },
+        {
+            "user": "root",
+            "pid": "19",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[cpuhp/0]"
+        },
+        {
+            "user": "root",
+            "pid": "20",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[cpuhp/1]"
+        },
+        {
+            "user": "root",
+            "pid": "21",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[idle_inject/1]"
+        },
+        {
+            "user": "root",
+            "pid": "22",
+            "cpu": "0.4",
+            "mem": "0.0",
+            "command": "[migration/1]"
+        },
+        {
+            "user": "root",
+            "pid": "23",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ksoftirqd/1]"
+        },
+        {
+            "user": "root",
+            "pid": "28",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kdevtmpfs]"
+        },
+        {
+            "user": "root",
+            "pid": "29",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[inet_frag_wq]"
+        },
+        {
+            "user": "root",
+            "pid": "30",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kauditd]"
+        },
+        {
+            "user": "root",
+            "pid": "31",
+            "cpu": "0.4",
+            "mem": "0.0",
+            "command": "[kworker/0:2-events]"
+        },
+        {
+            "user": "root",
+            "pid": "32",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[khungtaskd]"
+        },
+        {
+            "user": "root",
+            "pid": "33",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/u256:2-btrfs-delalloc]"
+        },
+        {
+            "user": "root",
+            "pid": "34",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[oom_reaper]"
+        },
+        {
+            "user": "root",
+            "pid": "35",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[writeback]"
+        },
+        {
+            "user": "root",
+            "pid": "36",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kcompactd0]"
+        },
+        {
+            "user": "root",
+            "pid": "37",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ksmd]"
+        },
+        {
+            "user": "root",
+            "pid": "38",
+            "cpu": "0.3",
+            "mem": "0.0",
+            "command": "[khugepaged]"
+        },
+        {
+            "user": "root",
+            "pid": "39",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kintegrityd]"
+        },
+        {
+            "user": "root",
+            "pid": "40",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kblockd]"
+        },
+        {
+            "user": "root",
+            "pid": "41",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[blkcg_punt_bio]"
+        },
+        {
+            "user": "root",
+            "pid": "42",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "[kworker/1:1-events]"
+        },
+        {
+            "user": "root",
+            "pid": "43",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[tpm_dev_wq]"
+        },
+        {
+            "user": "root",
+            "pid": "44",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[edac-poller]"
+        },
+        {
+            "user": "root",
+            "pid": "45",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[devfreq_wq]"
+        },
+        {
+            "user": "root",
+            "pid": "46",
+            "cpu": "0.2",
+            "mem": "0.0",
+            "command": "[kworker/1:1H-kblockd]"
+        },
+        {
+            "user": "root",
+            "pid": "47",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kswapd0]"
+        },
+        {
+            "user": "root",
+            "pid": "49",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "[kworker/u256:3-btrfs-delalloc]"
+        },
+        {
+            "user": "root",
+            "pid": "54",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kthrotld]"
+        },
+        {
+            "user": "root",
+            "pid": "56",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/24-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "57",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/25-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "58",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/26-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "59",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/27-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "60",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/28-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "61",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/29-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "62",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/30-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "63",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/31-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "64",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/32-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "65",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/33-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "66",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/34-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "67",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/35-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "68",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/36-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "69",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/37-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "70",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/38-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "71",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/39-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "72",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/40-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "73",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/41-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "74",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/42-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "75",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/43-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "76",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/44-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "77",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/45-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "78",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/46-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "79",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/47-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "80",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/48-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "81",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/49-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "82",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/50-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "83",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/51-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "84",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/52-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "85",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/53-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "86",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/54-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "87",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/55-pciehp]"
+        },
+        {
+            "user": "root",
+            "pid": "88",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[acpi_thermal_pm]"
+        },
+        {
+            "user": "root",
+            "pid": "89",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[mld]"
+        },
+        {
+            "user": "root",
+            "pid": "90",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "[kworker/0:1H-kblockd]"
+        },
+        {
+            "user": "root",
+            "pid": "91",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ipv6_addrconf]"
+        },
+        {
+            "user": "root",
+            "pid": "96",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kstrp]"
+        },
+        {
+            "user": "root",
+            "pid": "100",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/u257:0-hci0]"
+        },
+        {
+            "user": "root",
+            "pid": "167",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[mpt_poll_0]"
+        },
+        {
+            "user": "root",
+            "pid": "168",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[cryptd]"
+        },
+        {
+            "user": "root",
+            "pid": "170",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[mpt/0]"
+        },
+        {
+            "user": "root",
+            "pid": "173",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ata_sff]"
+        },
+        {
+            "user": "root",
+            "pid": "174",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_eh_0]"
+        },
+        {
+            "user": "root",
+            "pid": "175",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_tmf_0]"
+        },
+        {
+            "user": "root",
+            "pid": "176",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_eh_1]"
+        },
+        {
+            "user": "root",
+            "pid": "178",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/16-vmwgfx]"
+        },
+        {
+            "user": "root",
+            "pid": "179",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[ttm]"
+        },
+        {
+            "user": "root",
+            "pid": "180",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_tmf_1]"
+        },
+        {
+            "user": "root",
+            "pid": "181",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/u256:4-btrfs-endio]"
+        },
+        {
+            "user": "root",
+            "pid": "217",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_eh_2]"
+        },
+        {
+            "user": "root",
+            "pid": "218",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[scsi_tmf_2]"
+        },
+        {
+            "user": "root",
+            "pid": "249",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/0:4-events]"
+        },
+        {
+            "user": "root",
+            "pid": "251",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/1:2-ata_sff]"
+        },
+        {
+            "user": "root",
+            "pid": "265",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[xfsalloc]"
+        },
+        {
+            "user": "root",
+            "pid": "266",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[xfs_mru_cache]"
+        },
+        {
+            "user": "root",
+            "pid": "270",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[md]"
+        },
+        {
+            "user": "root",
+            "pid": "271",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[md_bitmap]"
+        },
+        {
+            "user": "root",
+            "pid": "280",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[raid5wq]"
+        },
+        {
+            "user": "root",
+            "pid": "326",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-worker]"
+        },
+        {
+            "user": "root",
+            "pid": "327",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-delalloc]"
+        },
+        {
+            "user": "root",
+            "pid": "328",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-flush_del]"
+        },
+        {
+            "user": "root",
+            "pid": "329",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-cache]"
+        },
+        {
+            "user": "root",
+            "pid": "330",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-fixup]"
+        },
+        {
+            "user": "root",
+            "pid": "331",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-endio]"
+        },
+        {
+            "user": "root",
+            "pid": "332",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-endio-met]"
+        },
+        {
+            "user": "root",
+            "pid": "333",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-rmw]"
+        },
+        {
+            "user": "root",
+            "pid": "334",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-endio-wri]"
+        },
+        {
+            "user": "root",
+            "pid": "335",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-compresse]"
+        },
+        {
+            "user": "root",
+            "pid": "336",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-freespace]"
+        },
+        {
+            "user": "root",
+            "pid": "337",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-delayed-m]"
+        },
+        {
+            "user": "root",
+            "pid": "338",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-qgroup-re]"
+        },
+        {
+            "user": "root",
+            "pid": "339",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-cleaner]"
+        },
+        {
+            "user": "root",
+            "pid": "340",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[btrfs-transaction]"
+        },
+        {
+            "user": "root",
+            "pid": "388",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[psimon]"
+        },
+        {
+            "user": "root",
+            "pid": "403",
+            "cpu": "0.3",
+            "mem": "0.2",
+            "command": "/lib/systemd/systemd-journald"
+        },
+        {
+            "user": "root",
+            "pid": "423",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid"
+        },
+        {
+            "user": "root",
+            "pid": "426",
+            "cpu": "0.2",
+            "mem": "0.1",
+            "command": "/lib/systemd/systemd-udevd"
+        },
+        {
+            "user": "root",
+            "pid": "428",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[psimon]"
+        },
+        {
+            "user": "root",
+            "pid": "502",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/0:2H]"
+        },
+        {
+            "user": "root",
+            "pid": "549",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/56-vmw_vmci]"
+        },
+        {
+            "user": "root",
+            "pid": "550",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/57-vmw_vmci]"
+        },
+        {
+            "user": "root",
+            "pid": "551",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[irq/58-vmw_vmci]"
+        },
+        {
+            "user": "root",
+            "pid": "698",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "/usr/sbin/haveged --Foreground --verbose=1"
+        },
+        {
+            "user": "root",
+            "pid": "712",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/bin/VGAuthService"
+        },
+        {
+            "user": "root",
+            "pid": "719",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/accounts-daemon"
+        },
+        {
+            "user": "root",
+            "pid": "740",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/sbin/cron -f"
+        },
+        {
+            "user": "message+",
+            "pid": "741",
+            "cpu": "0.1",
+            "mem": "0.0",
+            "command": "/usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only"
+        },
+        {
+            "user": "polkitd",
+            "pid": "756",
+            "cpu": "0.1",
+            "mem": "0.1",
+            "command": "/usr/lib/polkit-1/polkitd --no-debug"
+        },
+        {
+            "user": "root",
+            "pid": "765",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/sbin/rngd -f"
+        },
+        {
+            "user": "root",
+            "pid": "769",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/lib/systemd/systemd-logind"
+        },
+        {
+            "user": "root",
+            "pid": "770",
+            "cpu": "0.0",
+            "mem": "0.2",
+            "command": "/usr/libexec/udisks2/udisksd"
+        },
+        {
+            "user": "root",
+            "pid": "771",
+            "cpu": "0.3",
+            "mem": "0.1",
+            "command": "/usr/bin/vmtoolsd"
+        },
+        {
+            "user": "root",
+            "pid": "779",
+            "cpu": "0.1",
+            "mem": "0.3",
+            "command": "/usr/sbin/NetworkManager --no-daemon"
+        },
+        {
+            "user": "root",
+            "pid": "781",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev"
+        },
+        {
+            "user": "root",
+            "pid": "815",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/sbin/ModemManager"
+        },
+        {
+            "user": "root",
+            "pid": "844",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/u257:1-hci0]"
+        },
+        {
+            "user": "root",
+            "pid": "1196",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/libexec/bluetooth/bluetoothd"
+        },
+        {
+            "user": "jenkins",
+            "pid": "1259",
+            "cpu": "17.5",
+            "mem": "7.7",
+            "command": "/usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080"
+        },
+        {
+            "user": "root",
+            "pid": "1269",
+            "cpu": "0.2",
+            "mem": "0.6",
+            "command": "/usr/bin/containerd"
+        },
+        {
+            "user": "root",
+            "pid": "1290",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/sbin/lightdm"
+        },
+        {
+            "user": "ntpsec",
+            "pid": "1303",
+            "cpu": "0.1",
+            "mem": "0.2",
+            "command": "/usr/sbin/ntpd -p /run/ntpd.pid -c /etc/ntpsec/ntp.conf -g -N -u ntpsec:ntpsec"
+        },
+        {
+            "user": "root",
+            "pid": "1324",
+            "cpu": "3.6",
+            "mem": "1.5",
+            "command": "/usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch"
+        },
+        {
+            "user": "root",
+            "pid": "1325",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/sbin/agetty -o -p -- \\u --noclear - linux"
+        },
+        {
+            "user": "root",
+            "pid": "1326",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[cfg80211]"
+        },
+        {
+            "user": "root",
+            "pid": "1354",
+            "cpu": "0.6",
+            "mem": "0.9",
+            "command": "/usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock"
+        },
+        {
+            "user": "rtkit",
+            "pid": "1574",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/libexec/rtkit-daemon"
+        },
+        {
+            "user": "root",
+            "pid": "1614",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/1:2H]"
+        },
+        {
+            "user": "root",
+            "pid": "1633",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/u256:5-btrfs-endio-write]"
+        },
+        {
+            "user": "root",
+            "pid": "1637",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/upowerd"
+        },
+        {
+            "user": "root",
+            "pid": "1666",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "lightdm --session-child 13 20"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1692",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/lib/systemd/systemd --user"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1693",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "(sd-pam)"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1711",
+            "cpu": "0.3",
+            "mem": "0.4",
+            "command": "/usr/bin/pulseaudio --daemonize=no --log-target=journal"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1714",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1721",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1723",
+            "cpu": "0.1",
+            "mem": "0.3",
+            "command": "x-session-manager"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1760",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/libexec/dconf-service"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1785",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/bin/ssh-agent x-session-manager"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1786",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/at-spi-bus-launcher"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1792",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1811",
+            "cpu": "0.3",
+            "mem": "0.6",
+            "command": "/usr/bin/mate-settings-daemon"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1814",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/at-spi2-registryd --use-gnome-session"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1820",
+            "cpu": "0.4",
+            "mem": "0.5",
+            "command": "marco"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1821",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfsd"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1826",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1838",
+            "cpu": "0.4",
+            "mem": "0.6",
+            "command": "mate-panel"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1860",
+            "cpu": "0.0",
+            "mem": "0.2",
+            "command": "/usr/libexec/gvfs-udisks2-volume-monitor"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1865",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfs-mtp-volume-monitor"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1866",
+            "cpu": "0.4",
+            "mem": "0.7",
+            "command": "/usr/bin/caja"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1870",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfs-gphoto2-volume-monitor"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1879",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfs-goa-volume-monitor"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1881",
+            "cpu": "0.0",
+            "mem": "0.2",
+            "command": "/usr/libexec/polkit-mate-authentication-agent-1"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1886",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfs-afc-volume-monitor"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1887",
+            "cpu": "0.5",
+            "mem": "0.4",
+            "command": "/usr/bin/vmtoolsd -n vmusr --blockFd 3"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1889",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/geoclue-2.0/demos/agent"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1904",
+            "cpu": "0.0",
+            "mem": "0.3",
+            "command": "mate-power-manager"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1905",
+            "cpu": "0.1",
+            "mem": "0.5",
+            "command": "mate-volume-control-status-icon"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1917",
+            "cpu": "0.1",
+            "mem": "0.4",
+            "command": "/usr/bin/python3 /usr/share/system-config-printer/applet.py"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1927",
+            "cpu": "0.1",
+            "mem": "0.3",
+            "command": "mate-screensaver"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1961",
+            "cpu": "0.2",
+            "mem": "0.7",
+            "command": "nm-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1963",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/bin/sh -c pkill -15 opensnitch-ui; opensnitch-ui"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1965",
+            "cpu": "0.3",
+            "mem": "0.7",
+            "command": "/usr/bin/python3 /usr/bin/blueman-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1979",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/xdg-desktop-portal"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1985",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/xdg-document-portal"
+        },
+        {
+            "user": "flowjav",
+            "pid": "1992",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/xdg-permission-store"
+        },
+        {
+            "user": "root",
+            "pid": "2001",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2007",
+            "cpu": "0.0",
+            "mem": "0.2",
+            "command": "/usr/libexec/xdg-desktop-portal-gtk"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2017",
+            "cpu": "1.9",
+            "mem": "2.8",
+            "command": "/usr/bin/python3 /usr/bin/opensnitch-ui"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2037",
+            "cpu": "0.6",
+            "mem": "0.7",
+            "command": "/usr/lib/x86_64-linux-gnu/brisk-menu/brisk-menu"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2039",
+            "cpu": "0.1",
+            "mem": "0.4",
+            "command": "/usr/lib/mate-panel/wnck-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2041",
+            "cpu": "0.2",
+            "mem": "0.5",
+            "command": "/usr/lib/mate-power-manager/mate-inhibit-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2044",
+            "cpu": "1.0",
+            "mem": "0.4",
+            "command": "/usr/lib/mate-applets/mate-multiload-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2045",
+            "cpu": "0.1",
+            "mem": "0.5",
+            "command": "/usr/lib/mate-panel/clock-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2047",
+            "cpu": "0.1",
+            "mem": "0.4",
+            "command": "/usr/lib/mate-panel/notification-area-applet"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2106",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2219",
+            "cpu": "0.0",
+            "mem": "0.1",
+            "command": "/usr/libexec/gvfsd-metadata"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2234",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/usr/libexec/bluetooth/obexd"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2236",
+            "cpu": "0.4",
+            "mem": "0.7",
+            "command": "/usr/bin/python3 /usr/bin/blueman-tray"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2344",
+            "cpu": "0.9",
+            "mem": "0.6",
+            "command": "mate-terminal"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2383",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "bash"
+        },
+        {
+            "user": "root",
+            "pid": "2450",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/1:0-ata_sff]"
+        },
+        {
+            "user": "root",
+            "pid": "2470",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "[kworker/1:0H-kblockd]"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2479",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/bin/bash ./run_all.sh"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2503",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "command": "/bin/bash ./collect_processes.sh"
+        },
+        {
+            "user": "flowjav",
+            "pid": "2505",
+            "cpu": "150",
+            "mem": "0.0",
+            "command": "ps aux"
+        }
+    ],
+    "services": [],
+    "cronjobs": [],
+    "firewall_rules": [],
+    "sshd_config": {
+        "Include": "/etc/ssh/sshd_config.d/*.conf",
+        "KbdInteractiveAuthentication": "no",
+        "UsePAM": "yes",
+        "X11Forwarding": "yes",
+        "PrintMotd": "no",
+        "AcceptEnv": "LANG LC_*",
+        "Subsystem": "sftp /usr/lib/openssh/sftp-server"
+    }
+}
